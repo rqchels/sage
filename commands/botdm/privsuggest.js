@@ -6,7 +6,7 @@ module.exports = {
         if(message.channel.type !== "dm");
         message.author.send("Your private suggestion has been sent, thank you!");
 
-        const private = message.client.channels.get("798403707065991168");
+        const private = message.client.channels.cache.get("798403707065991168");
         private.send(`${message.member} just made a private suggestion saying "**${text}**`);
     }
 }
