@@ -18,7 +18,7 @@ module.exports = {
             }
         }
 
-        const private = message.client.channels.cache.get("7984099685243290518");
+        const private = message.client.channels.cache.get("798406258654445569");
         private.send({ embed: embed })
             .then(sentMessage => sentMessage.react("✅") && sentMessage.react("❌"))
             .catch(console.error);

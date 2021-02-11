@@ -17,7 +17,7 @@ module.exports = {
                 text: `Suggestion by ${message.author.tag}`
             }
         }
-        const channel = message.client.channels.cache.get("798409968524329051");
+        const channel = message.client.channels.cache.get("798406258654445569");
         channel.send({ embed: embed })
             .then((sentMessage) => sentMessage.react("✅") && sentMessage.react("❌"))
             .catch(console.error);
