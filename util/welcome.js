@@ -15,7 +15,7 @@ module.exports = bot =>{
         }
 
         channel.send(`\`🛎️\`・<@&772554029879918613>... ${member}`, { embed: welcomeEmbed }, "welcome to sage! <a:r_heart:804908857028509716>")
-            .then(sentMessage => sentMessage.react("804906705254481960"), sentMessage.react("773079630898921482"))
+            .then((sentMessage) => sentMessage.react("804906705254481960") && sentMessage.react("773079630898921482"))
             .catch(console.error);
     });
 
