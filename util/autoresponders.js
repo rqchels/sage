@@ -1,6 +1,7 @@
 module.exports = bot =>{
     bot.on("message", message =>{
         const msg = message.content.toLowerCase();
+        if(message.author.bot) return;
 
         if(msg.includes("welc") && message.channel.id === "798404804263018507"){
             message.react("806112519873101834");
