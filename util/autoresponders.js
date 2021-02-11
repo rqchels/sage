@@ -40,9 +40,9 @@ module.exports = bot =>{
             message.react("🥯");
             message.react("773321707241996338");
         } else if(msg.includes("good morning") || msg.includes("goodmorning") || msg.includes("gm")){
-            message.channel.send("good morning, have a beautiful day " + message.author.displayName + "! <a:r_heart:804908857028509716>");
+            message.channel.send("good morning, have a beautiful day " + message.author.username + "! <a:r_heart:804908857028509716>");
         } else if(msg.includes("good night") || msg.includes("goodnight") || msg.includes("gn")){
-            message.channel.send("goodnight, sleep well " + message.author.displayName + "! <a:r_heart:804908857028509716>");
+            message.channel.send("goodnight, sleep well " + message.author.username + "! <a:r_heart:804908857028509716>");
         }
     });
 }
