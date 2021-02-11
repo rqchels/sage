@@ -17,7 +17,7 @@ module.exports = {
 
         const channel = message.client.channels.cache.get("798406796518752266");
         const private = message.client.channels.cache.get("798403707065991168");
-        private.send(`${message.member} just said ${text}`);
+        private.send(`${message.author.tag} just said **${text}**`);
         channel.send({ embed: embed });
     }
 }
