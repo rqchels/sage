@@ -6,12 +6,12 @@ module.exports = {
         const embed = {
             color: 0x2f3136,
             title: "☕ : ୨୧ support ⋆˚.",
-            description: `${message.member} needs help in their dms! \n*'${text}'*\n\ndo [s!gotit] to let others know you're helping them!`,
+            description: `${message.author.tag} needs help in their dms! \n*'${text}'*`,
             footer: {
-                text: `Their id is: ${message.author.id}`
+                text: `do [s!gotit] to let others know you're helping them!`
             }
         }
         const private = message.client.channels.cache.get("798409968524329051");
-        private.send("**୧୨<input.role.here>୧୨**", { embed: embed });
+        private.send("**୧୨<input.role.here>୧୨**", { embed: embed }, `Their id is: **${message.author.id}**`);
     }
 }
