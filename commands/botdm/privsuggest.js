@@ -7,6 +7,6 @@ module.exports = {
         message.author.send("Your private suggestion has been sent, thank you!");
 
         const private = message.client.channels.cache.get("798403707065991168");
-        private.send(`${message.author.tag} just made a private suggestion saying "**${text}**`);
+        private.send(`${message.author.tag} just made a private suggestion saying "**${text}**"`);
     }
 }
