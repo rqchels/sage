@@ -25,7 +25,7 @@ module.exports = bot =>{
         const leaveEmbed = {
             color: 0x2f3136,
             title: "☕ : ୨୧ goodbye! ⋆˚.",
-            description: `${member.displayName} has left the shop.`,
+            description: `> ${member.displayName} has left the shop.`,
             thumbnail: {
                 url: "https://i.imgur.com/02BP7sh.jpg"
             },
