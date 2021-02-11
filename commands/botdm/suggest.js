@@ -19,7 +19,7 @@ module.exports = {
         }
         const channel = message.client.channels.cache.get("798403707065991168");
         channel.send({ embed: embed })
-            .then((sentMessage) => sentMessage.react("✅"), sentMessage.react("❌"))
+            .then((sentMessage) => sentMessage.react("✅") && sentMessage.react("❌"))
             .catch(console.error);
     }
 }
