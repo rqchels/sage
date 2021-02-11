@@ -5,7 +5,7 @@ module.exports = {
         const embed = {
             color: 0x2f3136,
             title: "☕ : ୨୧ ticket ⋆˚.",
-            description: `Hello ${message.member}, you have just opened a ticket! How may I help you today?`,
+            description: `Hello ${message.author.tag}, you have just opened a ticket! How may I help you today?`,
             fields: [
                 {
                     name: "s!suggest (your suggestion) ",
