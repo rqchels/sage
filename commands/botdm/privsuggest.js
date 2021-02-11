@@ -6,7 +6,21 @@ module.exports = {
         if(message.channel.type !== "dm");
         message.author.send("Your private suggestion has been sent, thank you!");
 
-        const private = message.client.channels.cache.get("798403707065991168");
-        private.send(`${message.author.tag} just made a private suggestion saying "**${text}**"`);
+        const embed = {
+            color: 0x2f3136,
+            title: "☕ : ୨୧ suggestion ⋆˚.",
+            description: text,
+            thumbnail: {
+                url: "https://media.discordapp.net/attachments/809299766998990848/809305118029381663/webhooks.png"
+            },
+            footer: {
+                text: `Suggestion by anonymous`
+            }
+        }
+
+        const private = message.client.channels.cache.get("7984099685243290518");
+        private.send({ embed: embed })
+            .then(sentMessage => sentMessage.react("✅") && sentMessage.react("❌"))
+            .catch(console.error);
     }
 }

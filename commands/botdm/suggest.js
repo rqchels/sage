@@ -11,13 +11,13 @@ module.exports = {
             title: "☕ : ୨୧ suggestion ⋆˚.",
             description: text,
             thumbnail: {
-                url: "https://cdn.discordapp.com/attachments/798403707065991168/808525103355658240/Screen_Shot_2021-02-08_at_9.30.01_PM.png"
+                url: "https://media.discordapp.net/attachments/809299766998990848/809305118029381663/webhooks.png"
             },
             footer: {
                 text: `Suggestion by ${message.author.tag}`
             }
         }
-        const channel = message.client.channels.cache.get("798403707065991168");
+        const channel = message.client.channels.cache.get("798409968524329051");
         channel.send({ embed: embed })
             .then((sentMessage) => sentMessage.react("✅") && sentMessage.react("❌"))
             .catch(console.error);
