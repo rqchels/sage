@@ -25,7 +25,7 @@ module.exports = {
                 }
             ]
         })
-            .then(channel => channel.send(`𓂃 ${user} hi cutie`) && channel.send({ embed: embed }))
+            .then(channel => channel.send(`𓂃 ${message.author} hi cutie`) && channel.send({ embed: embed }))
             .catch(console.error);
     }
 }
