@@ -1,7 +1,7 @@
 module.exports = {
     commands: ["ticket"],
     callback(message, arguments, text){
-        const cooldownChannelName = user.username.toLowerCase() + "-" + user.discriminator;
+        const cooldownChannelName = message.author.username.toLowerCase() + "-" + message.author.discriminator;
         const cooldown = reaction.message.guild.channels.cache.find(channel => channel.name === cooldownChannelName);
         if(cooldown){
             return message.reply("You can only have one ticket open at a time.");
