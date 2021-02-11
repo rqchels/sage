@@ -3,22 +3,22 @@ module.exports = bot =>{
         const msg = message.content.toLowerCase();
         if(message.author.bot) return;
 
-        if(msg.includes("welc") && message.channel.id === "798404804263018507"){
+        if(msg.startsWith("welc") && message.channel.id === "798404804263018507"){
             message.react("806112519873101834");
             message.react("773079630898921482");
-        } else if((msg.includes("thank") || msg.includes("ty")) && message.channel.id === "798404804263018507"){
+        } else if((msg.startsWith("thank") || msg.startsWith("ty")) && message.channel.id === "798404804263018507"){
             message.react("804908857028509716");
             message.react("773079630898921482");
-        } else if(msg.includes("╭┈┈┈┈⋆:°✰") && message.channel.id === "798406360370118656"){
+        } else if(msg.startsWith("╭┈┈┈┈⋆:°✰") && message.channel.id === "798406360370118656"){
             message.react("773079537109696543");
             message.react("773079576636424202");
-        } else if((msg.includes("no problem") || msg.includes("np")) && message.channel.id === "798404804263018507"){
+        } else if((msg.startsWith("no problem") || msg.startsWith("np")) && message.channel.id === "798404804263018507"){
             message.react("804908857028509716");
             message.react("773079630898921482");
-        } else if((msg.includes("you're welcome") || msg.includes("youre welcome") || msg.includes("yw") || msg.includes("ur welcome")) && message.channel.id === "798404804263018507"){
+        } else if((msg.startsWith("you're welcome") || msg.startsWith("youre welcome") || msg.startsWith("yw") || msg.startsWith("ur welcome")) && message.channel.id === "798404804263018507"){
             message.react("804908857028509716");
             message.react("773079630898921482");
-        } else if(msg.includes("╭┈┈┈┈⋆:°✰") && (message.channel.id === "798404060297953280" || message.channel.id === "798406312949448736")){
+        } else if(msg.startsWith("╭┈┈┈┈⋆:°✰") && (message.channel.id === "798404060297953280" || message.channel.id === "798406312949448736")){
             message.react("804906705254481960");
             message.react("773079630898921482");
             message.react("773079537109696543");
@@ -39,9 +39,9 @@ module.exports = bot =>{
             message.react("706666349698613298");
             message.react("🥯");
             message.react("773321707241996338");
-        } else if(msg.includes("good morning") || msg.includes("goodmorning") || msg.includes("gm")){
+        } else if(msg.startsWith("good morning") || msg.startsWith("goodmorning") || msg.startsWith("gm")){
             message.channel.send("good morning, have a beautiful day " + message.author.username + "! <a:r_heart:804908857028509716>");
-        } else if(msg.includes("good night") || msg.includes("goodnight") || msg.includes("gn")){
+        } else if(msg.startsWith("good night") || msg.startsWith("goodnight") || msg.startsWith("gn")){
             message.channel.send("goodnight, sleep well " + message.author.username + "! <a:r_heart:804908857028509716>");
         }
     });
