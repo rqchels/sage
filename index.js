@@ -32,4 +32,4 @@ bot.once("ready", () =>{
     reminder(bot);
 });
 
-bot.login("token here");
+bot.login(process.env.token);
