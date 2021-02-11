@@ -32,4 +32,4 @@ bot.once("ready", () =>{
     reminder(bot);
 });
 
-bot.login("ODA5MTg2NzAyMDkzODQ0NTEx.YCRb1w.LttrQDSEE2uoh4Do1Nqr9je_Qsw");
+bot.login("token here");
